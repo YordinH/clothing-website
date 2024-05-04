@@ -85,9 +85,10 @@
     gap: 10px;
     flex-shrink: 1;
     flex-wrap: wrap;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
 }
+
+.featured.row-one {border-top: 2px solid black;}
+.featured.row-four {border-bottom: 2px solid black;}
 
 .product {
     background-color: white;
