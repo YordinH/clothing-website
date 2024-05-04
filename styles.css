@@ -36,7 +36,7 @@
     
 }
 .nav.button {
-    border: 2px white;
+    border:none;
     border-radius: 4px;
     color: white;
     padding: 20px;
@@ -58,7 +58,7 @@
 
 .categories {
     background-color: white;
-    
+    font-weight:bold;
 }
 
 .categories.button {
@@ -66,6 +66,8 @@
     text-align: center;
     padding: 20px;
     border: none;
+    border-bottom: 2px solid lightgray;
+    border-top: 2px solid lightgray;
 }
 
 .categories.button:hover{
@@ -83,6 +85,8 @@
     gap: 10px;
     flex-shrink: 1;
     flex-wrap: wrap;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
 }
 
 .product {
@@ -101,6 +105,8 @@
     font-weight: normal;
 }
 
+.product h3 {font-weight: bold;}
+
 .product img {
     height:100%;
     width: 100%;
@@ -110,6 +116,7 @@
 }
 
 .product a:visited {color:black}
+.product a{color:black}
 
 a.fill-div {
     display: block;
@@ -119,10 +126,41 @@ a.fill-div {
 }
 
 .grow {transition: all .4s ease-in-out;}
-    
 .grow:hover {transform: scale(1.05);}
+.shrink {transition: all .2s ease-in-out;}
+.shrink:hover {transform: scale(0.9); }
 
 .footer {
-    padding: 40px;
     background-color: #412f26;
+    justify-content: flex-start;
 }
+
+.footer.text{
+    color:#ede1d2;
+    margin:35px 10px;
+}
+
+.footer.links {flex-direction: column;}
+
+.footer.links.social, .footer.links.nav{
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:20px 30px;
+}
+
+.footer.links button {
+    border-radius: 4px;
+    color: white;
+    justify-content: center;
+    border-radius: 4px;
+    border: none;
+    min-width: 80px;
+    align-items: center;
+    padding:20px
+}
+.footer.links button:hover{
+    background: #cbb89d;
+}
+
+.footer.text.contacts {margin-right: auto;}
+p {line-height: 1.2;}
