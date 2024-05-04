@@ -87,8 +87,7 @@
     flex-wrap: wrap;
 }
 
-.featured.row-one {border-top: 2px solid black;}
-.featured.row-four {border-bottom: 2px solid black;}
+.featured.rows {border-top: 2px solid black;border-bottom: 2px solid black;}
 
 .product {
     background-color: white;
